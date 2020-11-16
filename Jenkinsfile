@@ -4,7 +4,7 @@ stage('SCM'){
  git 'https://github.com/adaming-laurent/firstProjectDevOps'
 }
 
-stage('Compile'){/adaming-laurent/firstProjectDevOps
+stage('Compile'){
 def mvnHome = tool name: 'maven-3' , type: 'maven'
 sh "${mvnHome}/bin/mvn package"
 }
